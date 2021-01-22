@@ -48,6 +48,7 @@ for (i in 1:length(power_levels)){
     print(x[i, j])
     }
 }
+print(x)
 
 # Get best power level for the budget, given the number of treatments
 
