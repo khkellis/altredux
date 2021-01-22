@@ -37,14 +37,14 @@ get_n_for_power_level <- function(power_level, starting_n, true_diff_assumption,
     print(n)
     power <- worst_case_power(n, true_diff_assumption, alternative)
   }
-  return(n)
+  return(n[1])
 }
 
 
 
 for (i in 1:length(power_levels)){
   for (j in 1:length(power_levels)){
-    x[i, j] = get_n_for_power_level(power_levels[i], c(100,100), expected_differences[j], alternative)
+    x[i, j] <- get_n_for_power_level(power_levels[i], c(100,100), expected_differences[j], alternative)
     print(x[i, j])
     }
 }
