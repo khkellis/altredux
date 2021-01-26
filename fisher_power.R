@@ -9,7 +9,7 @@ number_of_treatments <- 4
 x <- matrix(0, 3, 3)
 
 power_levels <- c(0.6, 0.7, 0.8)
-expected_differences <- c(0.05, 0.07, 0.1)
+expected_differences <- c(0.2, 0.3)
 alternative = "two.sided"
 
 # Get worst-case power scenario based on values of p1 and p2 that satisfy
